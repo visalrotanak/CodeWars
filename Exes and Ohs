@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+bool xo (const char* str)
+{
+  char ch;
+  int len;
+  int a=0,b=0,i;
+  len = strlen(str);
+  for(i=0;i<len;i++)
+  {
+    ch = str[i];
+    switch(ch)
+    {
+       case 'o':
+       case 'O':
+         a++;
+      break;
+       case 'X':
+       case 'x':
+         b++;
+      break;
+    }  
+  }
+  if(a == b )
+     return true;
+  else 
+     return false;
+}
