@@ -1,0 +1,17 @@
+function inArray(array1,array2){
+  var arr = []
+  var j = 0;
+  for(var i=0;i<array1.length;i++)
+  {
+    for(var k=0;k<array2.length;k++)
+    {
+      if(array2[k].includes(array1[i]))
+      {
+      arr[j] = array1[i];
+      j++
+      break;
+      }
+    }
+  }
+  return arr.sort() 
+}
