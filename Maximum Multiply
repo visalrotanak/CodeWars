@@ -1,0 +1,15 @@
+int maxMultiple(int divisor, int bound) 
+{
+    if(divisor > bound)
+      return 0;
+    else if( divisor < bound)
+    {
+        while(bound != 0)
+        {
+            if(bound%divisor == 0)
+              break;
+            bound -= 1;
+        }
+    }
+    return bound;
+}
