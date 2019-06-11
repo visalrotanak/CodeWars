@@ -1,0 +1,7 @@
+function oddity(n){
+  var count = 0;
+  for(var i=1;i<=(Math.sqrt(n)+1);i++)
+  {if(n%i==0)count+=(n/i==i) ? 1 : 2}
+  if(count%2==0)  return 'even'
+  else return 'odd'
+}
