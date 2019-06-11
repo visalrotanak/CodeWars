@@ -1,0 +1,24 @@
+function narcissistic(value) {
+    var temp = 0;
+    var dig = 0;
+    var sum = 0;
+    var res = 0;
+    temp = value;
+    while(temp!=0)
+    {
+      temp=parseInt(temp/10);
+      dig++;
+    }
+    temp=value;
+    while(temp!=0)
+    { 
+      sum = temp%10;
+      res = (res + Math.pow(sum,dig));
+      temp=parseInt(temp/10);
+    }
+    if(res == value)
+      return true;
+    else
+      return false;
+  }
+  
