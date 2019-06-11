@@ -1,0 +1,14 @@
+#include <math.h>
+int* squareOrSquareRoot(int* array, int length)
+{
+    int i,t;
+    for(i=0;i<length;i++)
+    {
+      t = sqrt(array[i]);
+      if((t*t) == array[i])
+        array[i] = sqrt(array[i]);
+      else 
+        array[i] = array[i]*array[i];
+    }
+    return array;
+}
