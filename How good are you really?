@@ -1,0 +1,10 @@
+#include <stdbool.h>
+bool better_than_average(int class_points[], int class_size, int your_points) {
+  int i,a=0,b=0;
+  for(i=0;i<class_size;i++)
+    b+=class_points[i];
+  a = (b+your_points)/(class_size+1);
+  if(your_points>a)
+    return true;
+  else return false;
+}
