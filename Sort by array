@@ -1,0 +1,9 @@
+function last(x){
+var ar = x.split(" ");
+ar.sort((a,b)=>{
+  return a[a.length-1].localeCompare(b[b.length-1])
+})
+
+return ar
+
+}
