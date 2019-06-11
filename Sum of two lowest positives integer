@@ -1,0 +1,5 @@
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort( (x,y) => {return x-y})
+  return numbers[0]+numbers[1]
+  
+};
