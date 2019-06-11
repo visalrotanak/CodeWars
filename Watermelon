@@ -1,0 +1,10 @@
+function divide(weight){
+  if(weight>=4)
+  {
+   return  (weight%2==0)? true: false 
+  }
+  else 
+  {
+    return false
+  }
+}
