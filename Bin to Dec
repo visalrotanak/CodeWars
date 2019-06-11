@@ -1,0 +1,7 @@
+unsigned bin_to_decimal(const char *bin)
+{
+    unsigned dec = 0;
+    while (*bin)
+        dec = dec * 2 + *bin++ - '0';
+    return dec;
+}
