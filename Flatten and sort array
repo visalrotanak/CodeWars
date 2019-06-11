@@ -1,0 +1,20 @@
+"use strict";
+
+function flattenAndSort(array) {
+  var i = 0
+  var k = 0
+  var newArray = []
+  for(i=0;i<array.length;i++)
+  {
+    if(array[i].length!=0)
+    {  
+      for(var j=0;j<array[i].length;j++)
+      {
+        newArray[k] = array[i][j]
+        k++
+      }
+    }
+  }
+  newArray.sort((a,b)=>{return a-b})
+  return newArray;
+}
