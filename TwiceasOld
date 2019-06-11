@@ -1,0 +1,4 @@
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  var ageGab = (sonYearsOld*2)-dadYearsOld
+  return ageGab > 0 ? ageGab : (-1)*ageGab
+}
