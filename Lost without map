@@ -1,0 +1,4 @@
+function maps(x){
+  var num = x.map((a) => {return a*2})
+  return num
+}
