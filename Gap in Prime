@@ -1,0 +1,31 @@
+function isPrim(x) {
+	if (x === 2) return true; // as @Graipher commented
+	if (x % 2 !== 0) {
+		// you only need to check to the half of x
+		for (var i = 2; i <= x / 2; i++) {
+			if (x % i === 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	return false;
+}
+
+function gap(g, m, n) {
+	var lastPrim = null; // cache-value
+	// now the 'trick', check not every number to n
+	// when you found the gap, you have it and then you can return with the result
+	for (var i = m; i < n; i++) {
+		if (isPrim(i)) {
+			if (lastPrim === null) {
+				lastPrim = i;
+			} else if (i - lastPrim === g) {
+				return [lastPrim, i];
+			} else {
+				lastPrim = i;
+			}
+		}
+	}
+	return null; // no result was found
+}
