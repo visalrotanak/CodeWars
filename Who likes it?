@@ -1,0 +1,17 @@
+class Solution {
+    public static String whoLikesIt(String... names) {
+       int len = names.length; 
+       String str = "";
+        if(len == 0)
+        { str = "no one likes this";}
+        else if(len == 1)
+        { str = names[0]+" likes this";}
+        else if(len == 2)
+        { str = names[0]+" and "+names[1]+" like this";}
+        else if(len == 3)
+        { str = names[0]+", "+names[1]+" and "+names[2]+" like this";}
+        else if(len > 3)
+        { str = names[0]+", "+names[1]+" and "+(len-2)+" others like this";}
+     return str; 
+    }
+}
