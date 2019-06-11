@@ -1,0 +1,11 @@
+#include <stdbool.h>
+
+bool validParentheses(const char* strin) {
+
+  int n = 0;
+  for (; *strin; strin++) 
+  if ((n += (*strin == '(') - (*strin == ')')) < 0)
+    break;
+  return n == 0;
+
+}
