@@ -1,0 +1,13 @@
+function sumMix(x){
+  var n;
+  var sum = 0;
+  for(var i=0;i<x.length;i++)
+  {
+      n =x[i];
+    if(typeof n === typeof 's')
+        n = parseInt(n);
+
+    sum = sum + n;
+  }
+  return sum;
+}
