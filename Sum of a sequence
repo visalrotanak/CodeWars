@@ -1,0 +1,8 @@
+unsigned sequence_sum(unsigned start, unsigned end, unsigned step)
+{
+  int sum=0,i;
+    for(i=start;i<=end;i=i+step)
+        sum=sum+i;
+    return sum;
+   
+}
