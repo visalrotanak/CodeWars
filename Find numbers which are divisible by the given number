@@ -1,0 +1,15 @@
+function divisibleBy(numbers, divisor){
+      var i,j=0;
+      var newNumber = [];
+      for(i=0;i<numbers.length;i++)
+      {
+          if((numbers[i]%divisor) == 0)
+          {
+           newNumber[j] = numbers[i];
+           j++;
+          }
+          else continue;
+      }    
+      return newNumber;
+        
+}
