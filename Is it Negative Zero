@@ -1,0 +1,6 @@
+#include <stdbool.h>
+#include <math.h>
+
+bool isNegativeZero(float n) {
+    return (n == 0 && signbit(n) ? 1:0);
+}
