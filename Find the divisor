@@ -1,0 +1,14 @@
+function divisors(integer) {
+  var d = [];
+  var j = 0;
+  var a = integer;
+  for(var i=2;i<integer;i++)
+  {  
+    if(integer%i == 0)
+      { d[j] = i; j++; a--;}
+  }
+  if(integer == a)
+  return integer + " is prime";
+  else
+  return d;
+};
