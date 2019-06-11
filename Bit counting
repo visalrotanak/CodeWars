@@ -1,0 +1,13 @@
+#include <stddef.h>
+
+size_t countBits(unsigned value)
+{
+    int bit = 0;
+    while(value > 0)
+    {   
+        if(value%2 == 1)
+        ++bit;
+        value/=2;
+    }
+    return bit;
+}
