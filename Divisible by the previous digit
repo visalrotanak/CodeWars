@@ -1,0 +1,29 @@
+function divisibleByLast(n) {
+  var check = [];
+  var num = [];
+  var i = 0,j = 0;
+  while(n != 0)
+  {
+    num[i] = n%10;
+    n/=10;
+    n = Math.floor(n);
+    ++i;
+  }
+  i=1;
+  check[0] = false;
+  for(j=num.length-1;j>0;j--)
+  {
+    if(num[j-1]%num[j] == 0)
+    {
+      check[i] = true;
+      ++i;
+    }
+    else 
+    {  
+      check[i] = false;
+      ++i;
+    }
+  }
+    return check;
+      
+}
