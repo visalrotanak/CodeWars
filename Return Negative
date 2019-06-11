@@ -1,0 +1,10 @@
+int makeNegative(int num)
+{
+  if(num > 0)
+  {  
+     int a = num * 2;
+     return num-a;
+  }
+  else
+    return num;
+}
